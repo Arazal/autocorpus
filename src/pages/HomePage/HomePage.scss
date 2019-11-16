@@ -1,0 +1,121 @@
+@import "../../theme/theme";
+
+.Layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+
+  .Content {
+    flex: 1;
+    display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 10px;
+    gap: 10px;
+
+    // border: 5px solid green;
+    //align-items: center;
+    // display: flex;
+    //justify-content: center;
+    // align-items: center;
+
+    width: 100%;
+
+    background: $primary;
+    color: $on-secondary;
+    font-family: $core-font;
+
+    a {
+      color: inherit;
+    }
+
+    .col {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border: 1px solid black;
+      // margin: 0 7.5px 15px;
+      overflow: hidden;
+
+      &:hover {
+        cursor: grab;
+
+        & .background-image {
+          transform: scale(2);
+          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+        & .content {
+          opacity: 0.9;
+        }
+      }
+
+      &.cell1 {
+        height: 45vh;
+        width: 50vw;
+        justify-self: center;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        background-image: url("../../assets/3.png");
+        background-size: cover;
+      }
+      &.cell2 {
+        height: 40vh;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url("../../assets/light.jpg");
+        background-size: cover;
+      }
+      &.cell3 {
+        height: 40vh;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url("../../assets/vw.jpg");
+        background-size: cover;
+      }
+      &.cell4 {
+        height: 40vh;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url("../../assets/redcar-wo-color.jpg");
+        background-size: cover;
+      }
+
+      @media screen and (max-width: 800px) {
+        &.cell1 {
+          height: 45vh;
+          width: 100vw;
+          justify-self: center;
+          grid-column: 1/2;
+          grid-row: 1/2;
+          background-image: url("../../assets/3.png");
+          background-size: cover;
+        }
+        &.cell2 {
+          height: 40vh;
+          grid-column: 1/2;
+          grid-row: 2/3;
+          background-image: url("../../assets/light.jpg");
+          background-size: cover;
+        }
+        &.cell3 {
+          height: 40vh;
+          grid-column: 1/2;
+          grid-row: 3/4;
+          background-image: url("../../assets/vw.jpg");
+          background-size: cover;
+        }
+        &.cell4 {
+          height: 40vh;
+          grid-column: 1/2;
+          grid-row: 4/5;
+          background-image: url("../../assets/redcar-wo-color.jpg");
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

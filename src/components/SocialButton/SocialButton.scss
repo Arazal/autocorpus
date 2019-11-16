@@ -1,0 +1,32 @@
+.SocialButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  height: 100%;
+
+  cursor: pointer;
+
+  .Icon {
+    font-size: 20px;
+  }
+
+  .Label {
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
+
+.atag {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+  color: white;
+  &:hover {
+    color: rgb(100, 100, 214);
+  }
+}
