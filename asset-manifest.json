@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/autocorpus/static/css/main.f4a3454a.chunk.css",
+    "main.js": "/autocorpus/static/js/main.6643564a.chunk.js",
+    "main.js.map": "/autocorpus/static/js/main.6643564a.chunk.js.map",
+    "runtime-main.js": "/autocorpus/static/js/runtime-main.aec1f07d.js",
+    "runtime-main.js.map": "/autocorpus/static/js/runtime-main.aec1f07d.js.map",
+    "static/js/2.aa67c30f.chunk.js": "/autocorpus/static/js/2.aa67c30f.chunk.js",
+    "static/js/2.aa67c30f.chunk.js.map": "/autocorpus/static/js/2.aa67c30f.chunk.js.map",
+    "index.html": "/autocorpus/index.html",
+    "precache-manifest.a379f18c1780f9222dd604aee036f7fc.js": "/autocorpus/precache-manifest.a379f18c1780f9222dd604aee036f7fc.js",
+    "service-worker.js": "/autocorpus/service-worker.js",
+    "static/css/main.f4a3454a.chunk.css.map": "/autocorpus/static/css/main.f4a3454a.chunk.css.map",
+    "static/media/HomePage.scss": "/autocorpus/static/media/vw.68cd5f9a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aec1f07d.js",
+    "static/js/2.aa67c30f.chunk.js",
+    "static/css/main.f4a3454a.chunk.css",
+    "static/js/main.6643564a.chunk.js"
+  ]
+}
