@@ -10,9 +10,12 @@ import { socialButtons } from "./config/buttons";
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import RustOff from "./pages/RustOff/RustOff";
+import PolishProtect from "./pages/PolishProtect/PolishProtect";
+import MechPol from "./pages/MechPol/MechPol";
+import Painting from "./pages/Painting/Painting";
+import Services from "./pages/Services/Services";
 import SignInAndSignUp from "./pages/SignInAndSignUp/SignInAndSignUp";
 import { auth, createUserProfileDocument } from "./firebase";
-import ControlledSelectDemo from "./pages/RustOff/ControlledSelectDemo";
 
 class App extends React.Component {
   constructor() {
@@ -55,27 +58,42 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header
-          appTitle={this.state.appTitle}
-          socialButtons={socialButtons}
-          currentUser={this.state.currentUser}
-        />
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/rustoff">
-            <RustOff />
-          </Route>
-          <Route path="/demo">
-            <ControlledSelectDemo />
-          </Route>
-          <Route path="/signin" component={SignInAndSignUp} />
-        </Switch>
+        <div className="content">
+          <Header
+            appTitle={this.state.appTitle}
+            socialButtons={socialButtons}
+            currentUser={this.state.currentUser}
+          />
+          <Switch>
+            <Route exact path="/" component={HomePage}>
+              {/* <HomePage /> */}
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/rustoff">
+              <RustOff />
+            </Route>
+            <Route path="/polishprotect">
+              <PolishProtect />
+            </Route>
+            <Route path="/mechpol">
+              <MechPol />
+            </Route>
+            <Route path="/painting">
+              <Painting />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
 
+            <Route
+              path="/signin"
+              component={SignInAndSignUp}
+              currentUser={this.state.currentUser}
+            />
+          </Switch>
+        </div>
         <Nav navButtons={navButtons} />
       </div>
     );

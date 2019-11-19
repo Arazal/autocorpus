@@ -1,26 +1,34 @@
 import React from "react";
-
+import { withRouter } from "react-router-dom";
 import "./HomePage.scss";
 import Button from "../../components/CustomButton/CustomButton";
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
     <div className="Layout">
       <div className="Content">
         <div className="col cell1">
-          <Button>Удаление вмятин</Button>
+          <Button onClick={() => props.history.push("/rustoff")}>
+            Удаление вмятин
+          </Button>
         </div>
         <div className="col cell2">
           {" "}
-          <Button>Механическая полировка</Button>
+          <Button onClick={() => props.history.push("/mechpol")}>
+            Механическая полировка
+          </Button>
         </div>
         <div className="col cell3">
           {" "}
-          <Button>Локальная покраска</Button>
+          <Button onClick={() => props.history.push("/painting")}>
+            Локальная покраска
+          </Button>
         </div>
         <div className="col cell4">
           {" "}
-          <Button>Защитная полировка</Button>
+          <Button onClick={() => props.history.push("/polishprotect")}>
+            Защитная полировка
+          </Button>
         </div>
         {/* <div className="col cell4">
       <Button>Удаление царапин</Button>

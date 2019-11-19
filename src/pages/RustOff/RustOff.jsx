@@ -1,46 +1,180 @@
 import React from "react";
-import { Slider, Typography } from "@material-ui/core/";
+import AppBar from "@material-ui/core/AppBar";
+import Button from "@material-ui/core/Button";
+import CameraIcon from "@material-ui/icons/PhotoCamera";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Grid from "@material-ui/core/Grid";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import Link from "@material-ui/core/Link";
 
-import "./RustOff.scss";
+import img1 from "../../assets/rust/1.PNG";
+import img2 from "../../assets/rust/2.PNG";
+import img3 from "../../assets/rust/3.PNG";
+import img4 from "../../assets/rust/4.PNG";
+import img5 from "../../assets/rust/5.PNG";
+import img6 from "../../assets/rust/6.PNG";
 
-const marks = [
-  {
-    value: 3,
-    label: "3 Cm"
+const useStyles = makeStyles(theme => ({
+  icon: {
+    marginRight: theme.spacing(2)
   },
-  {
-    value: 7,
-    label: "7 Cm"
+  heroContent: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6)
   },
-  {
-    value: 15,
-    label: "15 Cm"
+  heroButtons: {
+    marginTop: theme.spacing(4)
   },
-  {
-    value: 30,
-    label: "30 Cm"
+  cardGrid: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8)
+  },
+  card: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column"
+  },
+  cardMedia: {
+    paddingTop: "56.25%" // 16:9
+  },
+  cardContent: {
+    flexGrow: 1
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6)
   }
-];
+}));
 
-const RustOff = () => {
+const cards = [1, 2, 3, 4, 5, 6];
+
+export default function Album() {
+  const classes = useStyles();
+
   return (
-    <div className="rust">
-      Удаление вмятин
-      <Typography id="range-slider" gutterBottom>
-        Temperature range
-      </Typography>
-      <Slider
-        min="1"
-        max="100"
-        marks={marks}
-        defaultValue="20"
-        // onChange={handleChange}
-        valueLabelDisplay="auto"
-        aria-labelledby="range-slider"
-        // getAriaValueText="some text"
-      />
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      {/* <AppBar position="relative">
+        <Toolbar>
+          <CameraIcon className={classes.icon} />
+          <Typography variant="h6" color="inherit" noWrap>
+            Album layout
+          </Typography>
+        </Toolbar>
+      </AppBar> */}
+      <main>
+        {/* Hero unit */}
+        <div className={classes.heroContent}>
+          <Container maxWidth="sm">
+            <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="textPrimary"
+              gutterBottom
+            >
+              Удаление вмятин без покраски
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Поврежденная деталь приводится в первоначальный, «заводской» вид
+              без шпатлевки, покраски, нарушения старого лакокрасочного
+              покрытия; кузов выглядит как новенький, даже профессионал не
+              определит автомобиль в категорию битых, крашеных, ремонтированных.
+              Позвоните нам, наш менеджер проконсультирует и предоставит Вам
+              подробную информацию.
+            </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    href="tel:+79175155515"
+                  >
+                    +7 (917) 515-55-15
+                  </Button>
+                </Grid>
+                {/* <Grid item>
+                  <Button variant="outlined" color="primary">
+                    Secondary action
+                  </Button>
+                </Grid> */}
+              </Grid>
+            </div>
+          </Container>
+        </div>
+        <Container className={classes.cardGrid} maxWidth="lg">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            <Grid item key={1} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img1}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+            <Grid item key={2} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img2}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+            <Grid item key={1} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img3}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+            <Grid item key={2} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img4}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+            <Grid item key={1} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img5}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+            <Grid item key={2} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={img6}
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Container>
+      </main>
+    </React.Fragment>
   );
-};
-
-export default RustOff;
+}
