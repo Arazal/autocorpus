@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/autocorpus/static/css/main.c24ad38b.chunk.css",
-    "main.js": "/autocorpus/static/js/main.f428ccde.chunk.js",
-    "main.js.map": "/autocorpus/static/js/main.f428ccde.chunk.js.map",
+    "main.css": "/autocorpus/static/css/main.3cd030cb.chunk.css",
+    "main.js": "/autocorpus/static/js/main.3f02e19a.chunk.js",
+    "main.js.map": "/autocorpus/static/js/main.3f02e19a.chunk.js.map",
     "runtime-main.js": "/autocorpus/static/js/runtime-main.aec1f07d.js",
     "runtime-main.js.map": "/autocorpus/static/js/runtime-main.aec1f07d.js.map",
-    "static/js/2.949aae81.chunk.js": "/autocorpus/static/js/2.949aae81.chunk.js",
-    "static/js/2.949aae81.chunk.js.map": "/autocorpus/static/js/2.949aae81.chunk.js.map",
+    "static/js/2.dd3176b4.chunk.js": "/autocorpus/static/js/2.dd3176b4.chunk.js",
+    "static/js/2.dd3176b4.chunk.js.map": "/autocorpus/static/js/2.dd3176b4.chunk.js.map",
     "index.html": "/autocorpus/index.html",
-    "precache-manifest.6f1f294764da044594c302fe729198f5.js": "/autocorpus/precache-manifest.6f1f294764da044594c302fe729198f5.js",
+    "precache-manifest.e9101cf0189103afd8e65591ddbfcd5d.js": "/autocorpus/precache-manifest.e9101cf0189103afd8e65591ddbfcd5d.js",
     "service-worker.js": "/autocorpus/service-worker.js",
-    "static/css/main.c24ad38b.chunk.css.map": "/autocorpus/static/css/main.c24ad38b.chunk.css.map",
+    "static/css/main.3cd030cb.chunk.css.map": "/autocorpus/static/css/main.3cd030cb.chunk.css.map",
+    "static/media/HomePage.scss": "/autocorpus/static/media/4.68cd5f9a.jpg",
     "static/media/1.PNG": "/autocorpus/static/media/1.35264fc3.PNG",
     "static/media/2.PNG": "/autocorpus/static/media/2.9c1a1a57.PNG",
     "static/media/3.PNG": "/autocorpus/static/media/3.306167bd.PNG",
-    "static/media/HomePage.scss": "/autocorpus/static/media/vw.68cd5f9a.jpg",
     "static/media/4.PNG": "/autocorpus/static/media/4.0052f83f.PNG",
     "static/media/5.PNG": "/autocorpus/static/media/5.8de7a7ef.PNG",
     "static/media/6.PNG": "/autocorpus/static/media/6.6d2af8c1.PNG",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aec1f07d.js",
-    "static/js/2.949aae81.chunk.js",
-    "static/css/main.c24ad38b.chunk.css",
-    "static/js/main.f428ccde.chunk.js"
+    "static/js/2.dd3176b4.chunk.js",
+    "static/css/main.3cd030cb.chunk.css",
+    "static/js/main.3f02e19a.chunk.js"
   ]
 }
