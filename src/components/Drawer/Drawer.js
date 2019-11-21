@@ -110,8 +110,7 @@ export default function PersistentDrawerLeft(props) {
           [classes.appBarShift]: open
         })}
         style={{
-          backgroundColor: "rgba(0,0,0,0.8)",
-          fontFamily: ""
+          backgroundColor: "rgba(0,0,0,0.8)"
         }}
       >
         <Toolbar>

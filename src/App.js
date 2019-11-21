@@ -44,8 +44,6 @@ class App extends React.Component {
               ...snapShot.data()
             }
           });
-
-          console.log("state:", this.state);
         });
       }
 
@@ -61,46 +59,38 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="content">
-          {/* <Header
-            appTitle={this.state.appTitle}
-            socialButtons={socialButtons}
-            currentUser={this.state.currentUser}
-          /> */}
           <Router>
             <Drawer />
 
             <CssBaseline />
-            <Container maxWidth="xl" style={{ marginTop: "70px" }}>
-              <Switch>
-                <Route exact path="/" component={HomePage}>
-                  {/* <HomePage /> */}
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/rustoff">
-                  <RustOff />
-                </Route>
-                <Route path="/polishprotect">
-                  <PolishProtect />
-                </Route>
-                <Route path="/mechpol">
-                  <MechPol />
-                </Route>
-                <Route path="/painting">
-                  <Painting />
-                </Route>
-                <Route path="/services">
-                  <Services />
-                </Route>
 
-                <Route
-                  path="/signin"
-                  component={SignInAndSignUp}
-                  currentUser={this.state.currentUser}
-                />
-              </Switch>
-            </Container>
+            <Switch>
+              <Route exact path="/" component={HomePage}></Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/rustoff">
+                <RustOff />
+              </Route>
+              <Route path="/polishprotect">
+                <PolishProtect />
+              </Route>
+              <Route path="/mechpol">
+                <MechPol />
+              </Route>
+              <Route path="/painting">
+                <Painting />
+              </Route>
+              <Route path="/services">
+                <Services />
+              </Route>
+
+              <Route
+                path="/signin"
+                component={SignInAndSignUp}
+                currentUser={this.state.currentUser}
+              />
+            </Switch>
           </Router>
         </div>
         <Footer />

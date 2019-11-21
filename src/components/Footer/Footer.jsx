@@ -53,7 +53,7 @@ export default function StickyFooter() {
     //   <CssBaseline />
 
     <footer className={classes.footer}>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Typography variant="body1">
           Москва, ул.Вавилова 3, ТЦ «Гагаринский», этаж -2.
         </Typography>
@@ -79,7 +79,11 @@ export default function StickyFooter() {
           titleAccess="9-22"
         />
 
-        <LocalCarWashIcon style={{ margin: "10px" }} titleAccess="Автомойка" />
+        <LocalCarWashIcon
+          style={{ margin: "10px" }}
+          titleAccess="Автомойка"
+          te="Автомойка"
+        />
 
         <Copyright />
       </Container>

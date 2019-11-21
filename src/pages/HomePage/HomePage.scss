@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
 
+  // border: 2px solid tomato;
+  margin-top: 70px;
+
   height: 100%;
   width: 100%;
 
@@ -78,7 +81,7 @@
       @media screen and (max-width: 800px) {
         &.cell1 {
           height: 45vh;
-          width: 100vw;
+          width: 95vw;
           justify-self: center;
           grid-column: 1/2;
           grid-row: 1/2;
@@ -87,6 +90,8 @@
         }
         &.cell2 {
           height: 40vh;
+          width: 95vw;
+          justify-self: center;
           grid-column: 1/2;
           grid-row: 2/3;
           background-image: url("../../assets/small/2.jpg");
@@ -94,6 +99,8 @@
         }
         &.cell3 {
           height: 40vh;
+          width: 95vw;
+          justify-self: center;
           grid-column: 1/2;
           grid-row: 3/4;
           background-image: url("../../assets/small/3.jpg");
@@ -101,6 +108,8 @@
         }
         &.cell4 {
           height: 40vh;
+          width: 95vw;
+          justify-self: center;
           grid-column: 1/2;
           grid-row: 4/5;
           background-image: url("../../assets/small/4.jpg");
