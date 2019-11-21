@@ -50,28 +50,28 @@
         justify-self: center;
         grid-column: 1/4;
         grid-row: 1/2;
-        background-image: url("../../assets/3.png");
+        background-image: url("../../assets/small/1.png");
         background-size: cover;
       }
       &.cell2 {
         height: 40vh;
         grid-column: 1/2;
         grid-row: 2/3;
-        background-image: url("../../assets/light.jpg");
+        background-image: url("../../assets/small/2.jpg");
         background-size: cover;
       }
       &.cell3 {
         height: 40vh;
         grid-column: 2/3;
         grid-row: 2/3;
-        background-image: url("../../assets/vw.jpg");
+        background-image: url("../../assets/small/3.jpg");
         background-size: cover;
       }
       &.cell4 {
         height: 40vh;
         grid-column: 3/4;
         grid-row: 2/3;
-        background-image: url("../../assets/redcar-wo-color.jpg");
+        background-image: url("../../assets/small/4.jpg");
         background-size: cover;
       }
 
@@ -82,28 +82,28 @@
           justify-self: center;
           grid-column: 1/2;
           grid-row: 1/2;
-          background-image: url("../../assets/3.png");
+          background-image: url("../../assets/small/1.png");
           background-size: cover;
         }
         &.cell2 {
           height: 40vh;
           grid-column: 1/2;
           grid-row: 2/3;
-          background-image: url("../../assets/light.jpg");
+          background-image: url("../../assets/small/2.jpg");
           background-size: cover;
         }
         &.cell3 {
           height: 40vh;
           grid-column: 1/2;
           grid-row: 3/4;
-          background-image: url("../../assets/vw.jpg");
+          background-image: url("../../assets/small/3.jpg");
           background-size: cover;
         }
         &.cell4 {
           height: 40vh;
           grid-column: 1/2;
           grid-row: 4/5;
-          background-image: url("../../assets/redcar-wo-color.jpg");
+          background-image: url("../../assets/small/4.jpg");
           background-size: cover;
         }
       }

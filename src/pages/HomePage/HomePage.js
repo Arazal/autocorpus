@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+
 import "./HomePage.scss";
 import Button from "../../components/CustomButton/CustomButton";
 
@@ -30,12 +30,6 @@ export default function HomePage(props) {
             Защитная полировка
           </Button>
         </div>
-        {/* <div className="col cell4">
-      <Button>Удаление царапин</Button>
-    </div>
-    <div className="col cell4">
-      <Button>Полировка фар</Button>
-    </div> */}
       </div>
     </div>
   );

@@ -170,6 +170,7 @@ export default function Pricing() {
                     fullWidth
                     variant={tier.buttonVariant}
                     color="primary"
+                    onClick={() => (window.location.href = "tel:+79175155515")}
                   >
                     {tier.buttonText}
                   </Button>
